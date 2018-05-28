@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+  
+  <bean id = "st" class ="Student"> <!--  we can give bean name or id -->
+   <constructor-arg name= "name" value="Gopal"/> 
+   <constructor-arg name ="country" value ="USA"/>
+   <constructor-arg name="age" value = "24"/>
+   <property name ="mobile" value="815496"/>
+   
+   <!--  <property name ="name" value ="Sindhu"/> 
+ 	<property name ="country" value="India"/>    internally it will be trying to call setCountry(value)  
+ 	<property name ="age" value="22"/>  -->
+   
+  </bean>
+
+
+<!-- Here, in the property name and country we are giving we are giving the property tag only apart from property tag is there any other tag we can use? 
+			We can make use of <Constructor-arg   /> and <property   />  tag both at the same time or individually.-->
+
+</beans>
+ 
